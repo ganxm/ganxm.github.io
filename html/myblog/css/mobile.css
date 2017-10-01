@@ -1,0 +1,63 @@
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.side-bar{
+	position: relative;
+	width: 20%;
+	float: none;
+	margin-left: 0;
+}
+.main{
+	width: 100%;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.article-list,.article{
+	margin: 0;
+}
+.side-bar .nav,
+.side-bar .tag-list{
+     text-align: center;
+     display: none;
+}
+#menu-checkbox:checked ~ .nav,
+#menu-checkbox:checked ~ .tag-list{
+	display:inline-block;
+}
+#menu-toggle{
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 18px;
+	font-weight: 100;
+	color: rgba(255,255,255,.7)
+}
+.side-bar .item,
+.side-bar .no-item{
+	margin-left: 10px;
+	display: inline-block;
+}
+#item{
+	margin-left: 0px;
+}
+#CodeInput{
+	padding: 0 50px;
+	width: 100%;
+}
+
+.pink,
+.white,
+.orange{
+    padding: 8px;
+}
+.result{
+	font-size: 13px;
+	padding: 1px 0;
+}
+.gitinput{
+	width: 70%;
+	margin-left: 2px;
+}
