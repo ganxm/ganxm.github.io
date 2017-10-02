@@ -1,0 +1,223 @@
+/*通用样式*/
+body{
+    font:12px "micsoft yahei";
+    color:#666;
+    margin:0;
+}
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+img{vertical-align:bottom;}
+a{
+    color:#000;
+    text-decoration:none;
+}
+a:hover{
+    color:#9EC012;
+}
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+/*2.整体布局*/
+/*1.导航部分*/
+body{
+    margin:0 auto;
+}
+#nav a{color:#fff;}
+#nav{
+    width:100%;
+    height:80px;
+    background-color:#61523F;
+    line-height:80px;
+    margin-bottom:20px;
+	position:fixed;
+}
+#nav>p>span{
+    color:#988B7B;
+}
+#nav>p>a{
+    font-size:16px;
+}
+#nav>p>a:hover{
+    color:#9EC012;
+}
+#nav>div.rt a:hover{
+    color:#666251;
+}
+#nav>div{
+    width:250px;
+    line-height:2;
+    margin-top:15px;
+    color:#A3998D;
+}
+#nav>div a{
+    font-size:8px;
+    color:#A3998D;
+}
+#nav>h1{
+    width:200px;
+    padding-left:20px;
+}
+#nav>h1>a{
+    font-size:48px;
+}
+#nav>ul>li{
+    float:left;
+    width:100px;
+    text-align:center;
+}
+#nav>ul>li>a{
+    font-size:20px;
+    padding-bottom:5px;
+    border-bottom:1px solid #61523F;
+}
+#nav>ul>li>a:hover{
+    border-bottom-color:#9EC012;
+}
+/*2.主体部分*/
+#main{width:100%;padding-top:100px;}
+/*1.主体右边*/
+#main-right{
+    width:24%;
+    margin-right:20px;
+    float:right;
+}
+/*1.1 input部分*/
+#main-right>input{
+    border:1px solid #ddd;
+    border-radius:5px;
+    width:100%;
+    height:25px;
+}
+/*1.2 热门阅读*/
+#main-right>div{
+    border:1px solid #ddd;
+    padding:20px;
+    margin:20px 0;
+}
+#main-right>div>p{
+    border-bottom:1px solid #ddd;
+    font-size:24px;
+    padding-bottom:10px;
+}
+#main-right>div>p>a{
+    border-bottom:1px solid #A5AF70;
+    padding-bottom:11px;
+}
+#main-right>div>ul.box1>li{
+    overflow:hidden;
+    padding:10px 0;
+    border-bottom:1px solid #ddd;
+}
+#main-right>div>ul>li>p{
+    float:left;
+}
+#main-right>div>ul>li>div{
+    float:left;
+    width:45%;
+    padding:0 10px;
+}
+#main-right>div>ul>li>div>a {
+    font-size: 17px;
+    font-weight: bold;
+}
+#main-right>div>ul>li>div>p{
+    margin-top:20px;
+    color:#BEBEBF;
+    font-size:14px;
+}
+/*3.热门话题*/
+#main-right>div>ul{
+    padding-top:10px;
+    overflow:hidden;
+}
+#main-right>div>ul.box2>li{
+    background:#FAFAFA;
+    float:left;
+    width:30%;
+    line-height:2;
+    margin-bottom:1%;
+    margin-right:1%;
+    padding-left:1.5%;
+}
+#main-right>div>ul.box2>li.pad{
+    margin-right:0;
+}
+#main-right>div>ul>li>a{
+    font-size:18px;
+}
+/*4.推荐网站*/
+#main-right>div>ul.box3>li{
+    width:50%;
+    float:left;
+    line-height:2;
+}
+/*2.主体中间*/
+#cate-box{
+    margin:0 20px;
+    float:right;
+    width:59%;
+}
+#cate-box>div{
+    border-bottom:1px solid #ddd;
+    overflow:hidden;
+    height:29px;
+}
+#cate-box>div>h1{
+    border-bottom:1px solid #A5AF70;
+    padding-bottom:5px;
+    font-size:20px;
+}
+#cate-box>div>p{
+    font-size:14px;
+}
+#main-middle>li{
+    padding:20px 0;
+    border-bottom:1px solid #ddd;
+    overflow:hidden;
+}
+#main-middle>li>p,#main-middle>li>div{
+    float:left;
+}
+#main-middle>li>div>p:first-child{
+    margin:20px 0;
+}
+#main-middle>li>div{
+    padding-left:30px;
+    width:61%;
+}
+#main-middle>li>div>a{
+    font-weight:bold;
+    font-size:32px;
+}
+#main-middle>li>div>div{
+    margin:20px 0;
+    font-size:20px;
+}
+#main-middle span{font-size:18px;}
+#main-middle span:first-child{
+    color:#76CF53;
+}
+/*3.主体左边*/
+#main>div:last-child{
+    width:13%;
+    padding-left:10px;
+	position:fixed;
+}
+#main>div:last-child ul{
+    border:1px solid #ddd;
+    padding:20px 0 0 20px;
+}
+#main>div:last-child li{
+    margin-bottom:20px;
+}
+#main>div:last-child a{
+    font-size:18px;
+    font-weight:bold;
+    color:#4B5463;
+}
+#main>div:last-child a:hover{
+    color:#76CF53;
+}
