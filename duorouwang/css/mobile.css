@@ -1,0 +1,45 @@
+#nav p,#nav div,#main>div:last-child,#main-right,#cate-box>div,#nav>ul{
+    display:none;
+}
+#nav>h1{
+    width:100%;
+    text-align:center;
+    padding:0;
+}
+#nav>h1>a{
+    font-size:200%;
+}
+#nav{
+    margin:0;
+}
+#main{
+    padding-top:80px;
+}
+#cate-box{
+    width:100%;
+}
+#main-middle p{
+    width:45%;
+    margin-left:5%;
+}
+#main-middle>li>div{
+    width:45%;
+}
+#main-middle>li>div>a{
+    font-size:150%;
+
+}
+#main-middle>li>div>div{
+    display:none;
+}
+#main-middle>li>div>p{
+    width:100%;
+    margin-top:30px;
+}
+#main-middle>li>div>p span{
+    font-size:110%;
+}
+.scroll-totop{
+    right: 15px;
+    bottom: 80px;
+}
