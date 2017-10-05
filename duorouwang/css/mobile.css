@@ -43,3 +43,19 @@
     right: 15px;
     bottom: 80px;
 }
+.navbar .col-6 .item{
+    display:none;
+}
+.navbar .mobileleft{
+    width:35%;
+}
+.navbar .hidden{
+    display:none;
+}
+.logo{
+    margin-left:10px;
+}
+.content .signbody{
+    width:80%;
+    margin-left:10%;
+}
