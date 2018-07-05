@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="css3," />
 
 
 
@@ -79,19 +79,19 @@
 
 
 
-<meta name="description" content="记录git学习情况">
-<meta name="keywords" content="hexo">
+<meta name="description" content="记录做网页时出现的问题和解决方法">
+<meta name="keywords" content="css3">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git学习笔记">
-<meta property="og:url" content="http://yoursite.com/2018/05/21/git学习笔记/index.html">
+<meta property="og:title" content="css那些我踩过的坑">
+<meta property="og:url" content="http://yoursite.com/2018/07/05/css那些我踩过的坑-1/index.html">
 <meta property="og:site_name" content="攻城狮">
-<meta property="og:description" content="记录git学习情况">
+<meta property="og:description" content="记录做网页时出现的问题和解决方法">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://image5.tuku.cn/pic/wallpaper/youxidongman/longmaokatongbizhi/001.jpg">
-<meta property="og:updated_time" content="2018-06-04T08:58:37.871Z">
+<meta property="og:updated_time" content="2018-07-05T02:12:13.759Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git学习笔记">
-<meta name="twitter:description" content="记录git学习情况">
+<meta name="twitter:title" content="css那些我踩过的坑">
+<meta name="twitter:description" content="记录做网页时出现的问题和解决方法">
 <meta name="twitter:image" content="http://image5.tuku.cn/pic/wallpaper/youxidongman/longmaokatongbizhi/001.jpg">
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/21/git学习笔记/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/05/css那些我踩过的坑-1/"/>
 
 
 
 
 
-  <title>git学习笔记 | 攻城狮</title>
+  <title>css那些我踩过的坑 | 攻城狮</title>
   
 
 
@@ -252,7 +252,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">git学习笔记</h1>
+          <h1 class="post-title" itemprop="name headline">css那些我踩过的坑</h1>
         
 
         <div class="post-meta">
@@ -264,8 +264,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-21T14:32:00+08:00">
-                2018-05-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-05T10:40:34+08:00">
+                2018-07-05
               </time>
             
 
@@ -311,7 +311,7 @@
 
           
               <div class="post-description">
-                  记录git学习情况
+                  记录做网页时出现的问题和解决方法
               </div>
           
 
@@ -331,7 +331,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://image5.tuku.cn/pic/wallpaper/youxidongman/longmaokatongbizhi/001.jpg" rel="gallery_cji2pay170001zowc8e757290"
+                 href="http://image5.tuku.cn/pic/wallpaper/youxidongman/longmaokatongbizhi/001.jpg" rel="gallery_cjj7x42150000xwwc2j98t07c"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://image5.tuku.cn/pic/wallpaper/youxidongman/longmaokatongbizhi/001.jpg" itemprop="contentUrl"/>
               </a>
@@ -344,128 +344,64 @@
       
 
       
-        <p>转载请申明出处，本文内容是向廖雪峰的官方网站学习的：<a href="https://www.liaoxuefeng.com" target="_blank" rel="noopener">https://www.liaoxuefeng.com</a></p>
-<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>GIT:分布式版本管理系统</p>
-<p>commit_id:版本号</p>
-<h2 id="git命令"><a href="#git命令" class="headerlink" title="git命令"></a>git命令</h2><ol>
-<li>git init ：初始化一个Git仓库</li>
-<li>git add <flle>：文件添加</flle></li>
-<li>git commit -m “” ：文件提交</li>
-<li>git status ：查看状态</li>
-<li>git diff ：查看difference</li>
-<li>git log ：显示最近到最远的提交日志</li>
-<li>git log – pretty = oneline ：提交日志一行行显示</li>
-<li>git reset ：回退到上一版本</li>
-<li>git reset –hard HEAD ：HEAD 指当前版本</li>
-<li>git reset –hard commit_id ：指定回到未来的某个版本</li>
-<li>git reflog ：显示做的每一次命令</li>
-</ol>
-<h2 id="工作区和暂存区"><a href="#工作区和暂存区" class="headerlink" title="工作区和暂存区"></a>工作区和暂存区</h2><ul>
-<li>工作区：Working Directory</li>
-<li>版本库：Repository</li>
-<li>暂存区：stage（或者叫index）</li>
-<li>Git 自动创建的第一个分支：master</li>
-<li>master 的一个指针：HEAD</li>
-<li>git add把添加的文件提交到暂存区</li>
-<li>git commit -m “” 把暂存区的所有文件全部提交到分支master</li>
-</ul>
-<h2 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h2><ol>
-<li>git checkout –file：让file文件回到最近的一次git commit 或git add时的状态 ( 撤销工作区的修改 )(–很重要，git checkout 是切换到另一个分支的意思)</li>
-<li>cat file：查看file的内容</li>
-<li>git reset HEAD file：撤销暂存区的修改</li>
-</ol>
-<h2 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h2><ul>
-<li>删除工作区的文件：rm file</li>
-<li>删除版本库中的文件：git rm file , git commit -m “”</li>
-<li>删错了工作区的文件需要恢复：git checkout – file (实际上是用版本库里的版本替换工作区的版本)</li>
-</ul>
-<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><ol>
-<li>GitHub：提供Git仓库托管服务，只要注册一个GitHub账号，就可以免费获得Git远程仓库</li>
-<li>git push：把当前分支master推送到远程</li>
-<li>git push -u origin master：第一次推送时加上-u参数，Git会把本地的master分支内容推送到远程新的master分支，还会把master分支和远程的master分支关联起来，在以后的推送或拉取时可以简化命令，以后推送时都只需要用git push origin master。</li>
-<li>git remote add origin git @ server：关联一个远程仓库</li>
-<li>git clone：命令克隆</li>
-<li>要克隆一个远程仓库，首先需要知道远程仓库的地址，然后使用</li>
-<li>Git支持多种协议，包括https，但是通过ssh支持的原生git协议速度最快</li>
-</ol>
-<h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><h3 id="创建与合并分支"><a href="#创建与合并分支" class="headerlink" title="创建与合并分支"></a>创建与合并分支</h3><ol>
-<li>创建并切换到dev分支：git checkout -b dev</li>
-<li>git checkout -b：创建并切换</li>
-<li>git branch：查看当前分支</li>
-<li>git checkout master：切换到master分支</li>
-<li>git merge dev：合并dev分支到当前分支</li>
-<li>Fast-forward：快进模式</li>
-<li>git branch -d dev：删除dev分支</li>
-<li>git branch dev：创建dev分支</li>
-</ol>
-<h3 id="解决冲突"><a href="#解决冲突" class="headerlink" title="解决冲突"></a>解决冲突</h3><p>git log – graph：查看分支合并图</p>
-<h3 id="分支管理策略"><a href="#分支管理策略" class="headerlink" title="分支管理策略"></a>分支管理策略</h3><ul>
-<li><p>一个团队可以创建多个分支工作，需要发布版本时再合并到master分支上并发布</p>
-</li>
-<li><p>Fast forward模式下删除分支后会丢掉分支信息</p>
-</li>
-<li><p>要强制禁用快进模式需要使用–no-ff参数</p>
-</li>
-<li><p>例如创建了dev分支，准备合并dev分支时：</p>
-<p>git merge –no-ff -m “” dev</p>
-<p>(-m “” ：本次合并创建一个新的commit，””里是commi的描述)</p>
-</li>
-</ul>
-<h3 id="Bug分支"><a href="#Bug分支" class="headerlink" title="Bug分支"></a>Bug分支</h3><p><strong>首先确定在哪个分支上修复Bug，如需在master分支上修复，就从master分支创建临时分支，创建后修复Bug，提交，修复完成后，切换到master分支，并完成合并，最后删除临时分支</strong></p>
-<p>例如：当前工作在dev分支上，在master分支上创建临时分支issue-101，修复readme.txt</p>
-<ol>
-<li>git stash  ：保存当前工作</li>
-<li>git checkout master  ：切换到分支master</li>
-<li>git checkout -b issue-101  ：创建并切换到分支 issue-101</li>
-<li>git add readme.txt  ：修复Bug后提交到暂存区</li>
-<li>git commit -m “fix bug 101”  ：提交到版本库</li>
-<li>git checkout master  ：切换到分支master</li>
-<li>git merge –no-ff -m “merged bug fix 101” issue-101  ：合并issue-101分支到master分支</li>
-<li>git branch -d issue-101  ：删除分支issue-101</li>
-<li>git checkout dev  ：切换到分支dev</li>
-<li>git status  ：查看状态 (工作区)</li>
-<li>git stash list   ：查看工作现场在哪里</li>
-<li>git stash apply  ：恢复</li>
-<li>git stash drop  ：删除</li>
-<li>git stash pop  ：恢复并删除stash内容</li>
-</ol>
-<h3 id="Feature-分支"><a href="#Feature-分支" class="headerlink" title="Feature 分支"></a>Feature 分支</h3><p>如果要开发一个新功能，最好新建一个分支</p>
-<p>如果要丢弃一个没有被合并过的分支，可以通过 git branch -D file 强行删除file</p>
-<h3 id="多人协作"><a href="#多人协作" class="headerlink" title="多人协作"></a>多人协作</h3><ol>
-<li>查看远程信息，用 git remote -v</li>
-<li>本地新建的分支如果不推送到远程，对其他人就是不可见的</li>
-<li>从本地推送分支，使用 git push origin branch-name，如果推送失败，先用git pull抓取远程的新提交</li>
-<li>在本地创建和远程分支对应的分支，使用git checkout -b branch-name origin/branch-name，本地和远程分支的名称最好一致</li>
-<li>建立本地分支和远程分支的连接，使用git branch –set - upstream branch-name origin/branch-name</li>
-<li>从远程抓取分支，使用git pull，如果有冲突，先处理冲突</li>
-</ol>
-<h2 id="标签管理"><a href="#标签管理" class="headerlink" title="标签管理"></a>标签管理</h2><h3 id="创建标签"><a href="#创建标签" class="headerlink" title="创建标签"></a>创建标签</h3><p><strong>标签是静止的，<u>可以取一个简易的名字方便查找</u>，例如 v1.0</strong></p>
-<ol>
-<li>打标签：先切换到需要打标签的分支上，然后git tag name</li>
-<li>git tag ：查看所有标签</li>
-<li>git tag name ：新建一个标签，默认为HEAD，也可以指定一个commit id</li>
-<li>git tag -a tagname -m “” ：指定标签信息 (-a：指定标签名；-m：指定说明文字)</li>
-<li>git tag -s tagname -m “” ：用PGP签名标签</li>
-<li>git show tagname ：查看标签信息</li>
-</ol>
-<p>例如:因为默认标签是打在最新提交的commit上的，因此如果要在这周一打标签，但是标签需要打在上周三提交的commit id 上，需要找到历史提交的commit id，然后打标签</p>
-<p>git log – pretty = oneline – abbrev - commit</p>
-<p>如找到的commit id是  6224973</p>
-<p>git tag v0.9 6224973</p>
-<h3 id="操作标签"><a href="#操作标签" class="headerlink" title="操作标签"></a>操作标签</h3><ol>
-<li><p>git tag -d v0.1 ：删除本地标签v0.1</p>
-</li>
-<li><p>git push origin v0.1 ：推送v0.1到远程</p>
-</li>
-<li><p>git push origin –tags ：一次性推送全部尚未推送到远程的本地标签</p>
-</li>
-<li><p>如果标签已经推送到远程，先删除本地标签，然后从远程删除 ：</p>
-<ul>
-<li>git tag -d v0.9</li>
-<li>git push origin : refs/tags/v0.9</li>
-</ul>
-</li>
-</ol>
+        <p>转载请申明出处</p>
+<h1 id="css那些我踩过的坑-1"><a href="#css那些我踩过的坑-1" class="headerlink" title="css那些我踩过的坑-1"></a>css那些我踩过的坑-1</h1><p>最近在把我去年写的一个网页扩展并升级，也解决了原来的一些问题，当时一些bug觉得怎么都改不了，烦的要死。结果前段时间看了一些别的代码，才发现我对一些标签的认知出现了错误，当时还一根筋的以为没错，才会改来改去都没效果，南辕北辙。所以为了以后不再犯这种错误，我想把我的一些踩坑经验写在博客上，既是对自己的一个警醒，又可以加深认识。</p>
+<h3 id="z-index"><a href="#z-index" class="headerlink" title="z-index"></a>z-index</h3><p>z-index属性设置的是元素的堆叠顺序，w3c教程里面说的是这样的：拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。 这解释真是太不亲民了，什么叫更高堆叠顺序？数字大的就是更高堆叠顺序吗？前面又是指什么？上面还是下面？</p>
+<p>我当时做的网页需要把弹窗设置在轮播广告图的上面，就是鼠标悬停在导航上的时候，出现的弹窗会遮住轮播图，但是当时设置z-index的时候把这句话理解错误，还以为z-index越小，元素越前面，结果怎么改都没有效果，前端时间终于想明白了，才发现z-index属性设置越大，堆叠的越上面，例如：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*轮播图设置堆叠顺序为0*/</span></span><br><span class="line"><span class="selector-id">#slider</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>:<span class="number">780px</span>;</span><br><span class="line">    <span class="attribute">height</span>:<span class="number">350px</span>;</span><br><span class="line">    <span class="attribute">position</span>:relative;</span><br><span class="line">    <span class="attribute">overflow</span>:hidden;</span><br><span class="line">    <span class="attribute">z-index</span>:<span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*弹窗设置堆叠顺序为3*/</span></span><br><span class="line"><span class="selector-id">#main-left</span>&gt;<span class="selector-tag">li</span><span class="selector-pseudo">:hover</span> <span class="selector-tag">div</span><span class="selector-class">.surronding</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>:inline-block;</span><br><span class="line">    <span class="attribute">z-index</span>:<span class="number">3</span>;</span><br><span class="line">    <span class="attribute">position</span>:absolute;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*#main-left&gt;li:hover div.surronding在#slider上面*/</span></span><br></pre></td></tr></table></figure>
+<p>这么设置之后，鼠标悬停时出现的弹窗才会在轮播图上面，也就是我们看网页的时候先看到div元素，去掉div元素才能看到id=slider的元素。</p>
+<p><strong>注意：z-index仅能在定位元素上奏效，例如设置了position的元素。</strong></p>
+<h3 id="去掉按钮点击之后出现的蓝色轮廓"><a href="#去掉按钮点击之后出现的蓝色轮廓" class="headerlink" title="去掉按钮点击之后出现的蓝色轮廓"></a>去掉按钮点击之后出现的蓝色轮廓</h3><p>前段时间做的网页里面一个按钮点击之后按钮会出现蓝色的边框，如图</p>
+<p><img src="/img/button1.png" alt=""></p>
+<p>要去掉这一圈蓝色的边框，需要设置一个属性outline</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">button</span>&#123;<span class="attribute">outline</span>:none;&#125;</span><br></pre></td></tr></table></figure>
+<p>在w3c教程里是这样写的：轮廓（outline）是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用。CSS outline 属性规定元素轮廓的样式、颜色和宽度。</p>
+<p>设置了outline属性为none之后，按钮点击后就不会出现蓝色的边框了。</p>
+<h3 id="鼠标悬停时出现阴影"><a href="#鼠标悬停时出现阴影" class="headerlink" title="鼠标悬停时出现阴影"></a>鼠标悬停时出现阴影</h3><p>如图</p>
+<p><img src="/img/button2.png" alt=""></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#search-box</span> <span class="selector-tag">button</span><span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line">    <span class="attribute">cursor</span>:pointer;</span><br><span class="line">    <span class="attribute">box-shadow</span>:<span class="number">1px</span> <span class="number">1px</span> <span class="number">10px</span> <span class="number">#DA4453</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>设置box-shadow属性就可以出现这种阴影效果，下面的这段引用自w3c教程：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">box-shadow</span>: <span class="selector-tag">h-shadow</span> <span class="selector-tag">v-shadow</span> <span class="selector-tag">blur</span> <span class="selector-tag">spread</span> <span class="selector-tag">color</span> <span class="selector-tag">inset</span>;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+<th>测试</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>h-shadow</em></td>
+<td>必需。水平阴影的位置。允许负值。</td>
+<td><a href="http://www.w3school.com.cn/tiy/c.asp?f=css_box-shadow" target="_blank" rel="noopener">测试</a></td>
+</tr>
+<tr>
+<td><em>v-shadow</em></td>
+<td>必需。垂直阴影的位置。允许负值。</td>
+<td><a href="http://www.w3school.com.cn/tiy/c.asp?f=css_box-shadow" target="_blank" rel="noopener">测试</a></td>
+</tr>
+<tr>
+<td><em>blur</em></td>
+<td>可选。模糊距离。</td>
+<td><a href="http://www.w3school.com.cn/tiy/c.asp?f=css_box-shadow&amp;p=3" target="_blank" rel="noopener">测试</a></td>
+</tr>
+<tr>
+<td><em>spread</em></td>
+<td>可选。阴影的尺寸。</td>
+<td><a href="http://www.w3school.com.cn/tiy/c.asp?f=css_box-shadow&amp;p=7" target="_blank" rel="noopener">测试</a></td>
+</tr>
+<tr>
+<td><em>color</em></td>
+<td>可选。阴影的颜色。请参阅 CSS 颜色值。</td>
+<td><a href="http://www.w3school.com.cn/tiy/c.asp?f=css_box-shadow&amp;p=10" target="_blank" rel="noopener">测试</a></td>
+</tr>
+<tr>
+<td>inset</td>
+<td>可选。将外部阴影 (outset) 改为内部阴影。</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
@@ -484,7 +420,7 @@
       
         <div class="post-tags">
           
-            <a href="../../../../tags/hexo/" rel="tag"># hexo</a>
+            <a href="../../../../tags/css3/" rel="tag"># css3</a>
           
         </div>
       
@@ -497,15 +433,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="../../../06/04/html5简述/" rel="next" title="html简述及html5新特性">
+                <i class="fa fa-chevron-left"></i> html简述及html5新特性
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="../../../06/04/html5简述/" rel="prev" title="html简述及html5新特性">
-                html简述及html5新特性 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -637,7 +573,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git命令"><span class="nav-number">2.</span> <span class="nav-text">git命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工作区和暂存区"><span class="nav-number">3.</span> <span class="nav-text">工作区和暂存区</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#撤销修改"><span class="nav-number">4.</span> <span class="nav-text">撤销修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除文件"><span class="nav-number">5.</span> <span class="nav-text">删除文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#远程仓库"><span class="nav-number">6.</span> <span class="nav-text">远程仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分支管理"><span class="nav-number">7.</span> <span class="nav-text">分支管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建与合并分支"><span class="nav-number">7.1.</span> <span class="nav-text">创建与合并分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决冲突"><span class="nav-number">7.2.</span> <span class="nav-text">解决冲突</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分支管理策略"><span class="nav-number">7.3.</span> <span class="nav-text">分支管理策略</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Bug分支"><span class="nav-number">7.4.</span> <span class="nav-text">Bug分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Feature-分支"><span class="nav-number">7.5.</span> <span class="nav-text">Feature 分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多人协作"><span class="nav-number">7.6.</span> <span class="nav-text">多人协作</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标签管理"><span class="nav-number">8.</span> <span class="nav-text">标签管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建标签"><span class="nav-number">8.1.</span> <span class="nav-text">创建标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#操作标签"><span class="nav-number">8.2.</span> <span class="nav-text">操作标签</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#css那些我踩过的坑-1"><span class="nav-number">1.</span> <span class="nav-text">css那些我踩过的坑-1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#z-index"><span class="nav-number">1.0.1.</span> <span class="nav-text">z-index</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#去掉按钮点击之后出现的蓝色轮廓"><span class="nav-number">1.0.2.</span> <span class="nav-text">去掉按钮点击之后出现的蓝色轮廓</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#鼠标悬停时出现阴影"><span class="nav-number">1.0.3.</span> <span class="nav-text">鼠标悬停时出现阴影</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
